@@ -7,6 +7,7 @@ import { initializeFirebase } from "./push-notification";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./assets/css/animate.css";
+import "./assets/css/LineIcons.2.0.css";
 import "./assets/css/main.css";
 // import i18n (needs to be bundled ;))
 import "./utils/i18n";
