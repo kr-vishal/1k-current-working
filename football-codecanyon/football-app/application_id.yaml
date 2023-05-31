@@ -1,0 +1,7 @@
+flutter_application_id:
+  android:
+    id: "com.virmana.myteamapp"
+    name: "My Team"
+  ios:
+    id: "com.virmana.myteamapp"
+    name: "My Team"

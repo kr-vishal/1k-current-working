@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Team App - Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Virmana</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">MyTeam App</a></li>
+                    <li class="breadcrumb-item active">Documentation</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fas fa-check"></i> Documentation </h1>
+                    <div class="meta"><i class="fas fa-check"></i> Config your application without technical knowable</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section class="doc-section">
+                                <div  class="section-block">
+                                    <div class="content">
+                                        <p>
+                                        Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/virmana">here</a>. Thanks so much!
+                                        </p>
+                                        <p>
+                                        Created: 06/05/2021 <br>
+                                        By: Virmana Inc <br>
+                                        Email: virmana.inc@gmail.com <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <hr>
+                            <section id="android-project" class="doc-section">
+
+                                <h2 class="section-title">Config Android Project</h2>
+                                <div id="requirements" class="section-block">
+                                    <h4 class="block-title">Requirements</h4>
+                                    <div class="content">
+                                        <p>To edit this project you must have Flutter and Dart installed and configured successfully on your computer. you can follow the steps bellow to install the last version
+                                        <ul>
+                                        	<li><a href="https://flutter.dev/docs/get-started/install">Install flutter</a></li>
+                                        </ul>
+                                         make sure you have install the Flutter and Dart plugins in your editor 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>After Download , install and open the project on Android Studio , now you need to config your source code and make it ready by change package name config firebase config facebook .... </p>
+                                </div>
+                                <br>
+                                <div id="android-studio-open-project" class="section-block">
+                                    <h4 class="block-title">Open Your Project </h4>
+                                    <div class="content">
+                                        <p>
+                                            Now you need to open the Mobile Application on Android Studio (or your edit) just follow the video bellow to open the project . 
+                                        </p>
+                                        <iframe width="800" height="440" src="https://www.youtube.com/embed/SpIxZW0-iFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="android-project-package-name" class="section-block">
+                                    <h4 class="block-title">Change the App Id and App Name </h4>
+                                    <div class="content">
+                                        <p>
+                                            Every Android/iOS Application on Google Play or on AppStore has a unique id (Package name for android and Bundle Identifier on iOS) , for this application too we need to use a unique id , for that you need to choose a unique id with three part for example : <b>com.companyname.appname</b>  , now to change you package name follow the video bello :
+                                            <br>
+                                            <br>
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/H4-VUAWhsk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </p>
+
+                                       <div class="callout-block callout-danger">
+                                            <div class="icon-holder">
+                                                <svg class="svg-inline--fa fa-bug fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="bug" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"></path></svg><!-- <i class="fas fa-bug"></i> -->
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h4 class="callout-title">Please note</h4>
+                                                <ul>
+                                                    <li>The only special characters allowed on package name its underscore </li>
+                                                    <li>Do not use _ or any other special characters for iOS id</li>
+                                                    <li>Google Play/AppStore will not allow you to change the package name after published</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                         <div class="code-block">
+                                                <h6>Commands used in video </h6>
+                                                <pre><code class="language-markup">flutter pub get</code></pre>
+                                                <pre><code class="language-markup">flutter pub run flutter_application_id:main -f application_id.yaml</code></pre>
+                                            </div><!--//code-block-->
+                                        <br>
+                                    </div>
+                                </div>
+                                <div id="android-project-firebase" class="section-block">
+                                    <h4 class="block-title">Android Firebase Configuration</h4>
+                                    <div class="content">
+                                        <p>
+                                            After Change app name and app id now you need to config the firebase  for Android(firebase its a google service used to send notification and to allow the application login with google accounts) 
+                                            <hr>
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/0xnmJja_q8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <br>
+                                        </p>
+                                       <div class="callout-block callout-danger">
+                                            <div class="icon-holder">
+                                                <svg class="svg-inline--fa fa-bug fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="bug" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"></path></svg><!-- <i class="fas fa-bug"></i> -->
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h4 class="callout-title">Please note</h4>
+                                                <ul>
+                                                    <li>Don't try to generate APK without config firebase</li>
+                                                    <li>Don't try To sync the project without config firebase</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div id="ios-project-firebase" class="section-block">
+                                    <h4 class="block-title">iOS Firebase Configuration</h4>
+                                    <div class="content">
+                                        <p>
+                                            now you need to config the firebase  for iOS 
+                                            <hr>
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/xaI_KmDqdSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <br>
+                                        </p>
+                                       <div class="callout-block callout-danger">
+                                            <div class="icon-holder">
+                                                <svg class="svg-inline--fa fa-bug fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="bug" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"></path></svg><!-- <i class="fas fa-bug"></i> -->
+                                            </div><!--//icon-holder-->
+                                            <div class="content">
+                                                <h4 class="callout-title">Please note</h4>
+                                                <ul>
+                                                    <li>Don't replace GoogleService-Info.plist without using XCode</li>
+                                                    <li>Firebase notification are not supported in the iOS simulator</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div id="android-project-facebook" class="section-block">
+                                    <h4 class="block-title">Facebook Configuration</h4>
+                                    <div class="content">
+                                        <p>
+                                            After config Firebase  now you need to config the facebook Application (this configuratio required to use facebook login + Facebook Network Audiance )
+                                            <br>
+                                            <div class="code-block">
+                                                <h6>use the commande bellow to generate the hashkey  : </h6>
+                                                <h4>For MacOS</h4>
+                                                <pre><code class="language-markup">keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64 </code></pre>
+                                                <h4>For Windows</h4>
+                                                <pre><code class="language-markup">keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | openssl sha1 -binary | openssl </code></pre>
+                                            
+                                            </div><!--//code-block-->
+                                            <br>
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/2FhqjLz5z3o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </p>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div id="android-project-google" class="section-block">
+                                    <h4 class="block-title">Google / Phone Auth Configuration</h4>
+                                    <div class="content">
+                                        <p>
+                                            After Publish App On google Play follow the video bellow 
+                                            <br>
+                                            <br>
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/qeyzIUTH28w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="admin-panel" class="doc-section">
+                                <h2 class="section-title">Admin Panel</h2>
+                                <div class="content">
+                                    <p>Now you need to setup your admin panel and that required a shared hosting or a vps server with the requirement bellow </p>
+                                </div>
+                                <br>
+                                <div class="callout-block callout-success">
+                                    <div class="icon-holder">
+                                        <svg class="svg-inline--fa fa-bug fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="bug" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"></path></svg><!-- <i class="fas fa-bug"></i> -->
+                                    </div><!--//icon-holder-->
+                                    <div class="content">
+                                        <h4 class="callout-title">Hosting Requirements</h4>
+                                        <ul>
+                                            <li>Exif Extension</li>
+                                            <li>Fileinfo Extension</li>
+                                            <li>GD Extension</li>
+                                            <li>PHP iconv extension</li>
+                                            <li>PHP Vertsion 7.0/7.1/7.2/7.3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>After prepare your server follow the video bellow to setup the admin panel</p>
+                                    <iframe width="800" height="440" src="https://www.youtube.com/embed/kxmSfUM7dRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <br>
+                                    <br>
+                                    <p>
+                                            After Config admin panel Go to firebase > Project settings > Cloud Messaging > and copy the server key 
+                                            <br>
+                                            Then Go to Admin panel > menu left > Settings > and past your server key and click save check screenshot bellow:
+                                            <br>
+                                            <br>
+                                            <img src="assets/images/image_4.png" style="width:100%" >
+                                            <br>
+                                            <br>
+                                            <img src="assets/images/image_5.png" style="width:100%" >
+
+                                        </p>
+                                </div>
+                                <hr>
+                                <div id="admin-panel-link" class="section-block">
+                                    <h4 class="block-title">Link The Android App With Admin panel</h4>
+                                    <div class="content">
+                                        <p>
+                                            After the android app configuration and the admin panel configuration now you need to link it .<br> to do this go to :
+                                            <div class="code-block">
+                                                <pre><code class="language-markup">Application&gt;lib&gt;api&gt;api_config.dart</code></pre>
+                                            </div><!--//code-block-->
+                                            <img src="assets/images/image_6.png" style="width:100%" >
+
+                                            and add your api url there (if your admin panel its http://admin.example.com you api url will be http://admin.example.com/api/)
+                                             <div class="code-block">
+                                                <pre><code class="language-markup">static const String api_url = "https://football.virmana.com/api/";</code></pre>
+                                            </div><!--//code-block--> 
+
+                                            <br>
+
+                                            Then add your item purchase code in
+                                             <div class="code-block">
+                                                <pre><code class="language-markup">  static const String item_purchase_code  = "xxxxxx-xxxxxx-xxxxxxx-xxxxxxx-xxxxxxx";
+                                                </code></pre>
+                                            </div><!--//code-block-->
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="app-customization" class="doc-section">
+                                <h2 class="section-title">Android Application Customization</h2>
+                                <div class="content">
+                                    <p>After config everything now you app need a customization to take your touch like title,icon,colors .... </p>
+                                </div>
+                                <hr>
+                                <div id="app-customization-logo" class="section-block">
+                                    <h4 class="block-title">Change the application icons</h4>
+                                    <div class="content">
+                                        <p>
+                                           To change the application launcher icon for iOS and Android Follow video bellow : <br>
+                                            <br> 
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/ABJhZwPnVVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <br>
+                                            <div class="code-block">
+                                                <h6>Commands used in video </h6>
+                                                <pre><code class="language-markup">flutter pub get</code></pre>
+                                                <pre><code class="language-markup">flutter pub run flutter_launcher_icons:main</code></pre>
+                                            </div><!--//code-block-->
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="app-customization-colors" class="section-block">
+                                    <h4 class="block-title">Change the application colors</h4>
+                                    <div class="content">
+                                        <p>
+                                           To change the application colors <br> Go to :
+                                            <div class="code-block">
+                                                <pre><code class="language-markup">Application&gt;lib&gt;config&gt;colors.dart</code></pre>
+                                            </div><!--//code-block-->
+                                            <br>
+                                           <img src="assets/images/image_7.png" style="width:100%" >
+
+                                        </p>
+                                        <p>and change all app colors there </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="app-customization-facebook-ads" class="section-block">
+                                    <h4 class="block-title">Change Admob/Facebook ads IDs</h4>
+                                    <div class="content">
+                                        <p>
+                                           To Admin Panel > Menu > Settings > Settings Ads and set your AdMob / Facebook Ads Ids
+                                    </div>
+                                </div>
+                                <hr>
+                                
+                            </section>
+                            <section id="app-apk" class="doc-section">
+                                <h2 class="section-title">Generate Release APK/AppBundle</h2>
+                                <div class="content">
+                                    <p>After config everything now you app need to publish your app on google play to do that follow the video bellow</p>
+                                    <p>
+                                            <br> 
+                                            <iframe width="800" height="440" src="https://www.youtube.com/embed/ABJhZwPnVVY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <br>
+                                            <div class="code-block">
+                                                <h4>Commands used to create keystore  </h4>
+                                                <h6>For MacOS</h6>
+                                                <pre><code class="language-markup"> keytool -genkey -v -keystore keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></pre>
+                                                <h6>For Windows</h6>
+                                                <pre><code class="language-markup">keytool -genkey -v -keystore c:\Users\USER_NAME\keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></pre>
+                                            </div><!--//code-block-->
+                                            <div class="code-block">
+                                                <h4>Commands used to generate apk or appbundle file</h4>
+                                                <h6>For APK</h6>
+                                                <pre><code class="language-markup">flutter build apk</code></pre>
+                                                <h6>For appbundle</h6>
+                                                <pre><code class="language-markup">flutter build appbundle</code></pre>
+                                            </div><!--//code-block-->
+                                              
+                                        </p>
+                                </div>
+
+                                
+                            </section>
+                            <section id="update_v_2" class="doc-section">
+                                <h2 class="section-title">Update to v2.0</h2>
+                                <div class="content">
+                                    <p>to Update App to v2.0 you will need to reconfigure your app becuase 90% of files has been updated</p>
+                                    <p>No changes required in web panel</p>
+                                    
+                                </div>
+
+                                
+                            </section>
+                            <section id="update_v_3" class="doc-section">
+                                <h2 class="section-title">Update to v3.0</h2>
+                                <div class="content">
+                                    <p>to Update App to v3.0 you will need to reconfigure your app becuase 90% of files has been updated</p>
+                                    <p>No changes required in web panel</p>
+                                    
+                                </div>
+
+                                
+                            </section>
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                    <a class="nav-link scrollto" href="#android-project">Config Android Project</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+
+                                        <a class="nav-link scrollto" href="#requirements">Requirements</a>
+                                        <a class="nav-link scrollto" href="#android-studio-open-project">Open Project</a>
+                                        <a class="nav-link scrollto" href="#android-project-package-name">Change the package name</a>
+                                        <a class="nav-link scrollto" href="#android-project-firebase">Android Firebase Configuration</a>
+                                        <a class="nav-link scrollto" href="#ios-project-firebase">iOS Firebase Configuration</a>
+                                        <a class="nav-link scrollto" href="#android-project-facebook">Facebook login Configuration</a>
+                                        <a class="nav-link scrollto" href="#android-project-google">Google / Phone Auth Configuration</a>
+
+                                    </nav><!--//nav-->
+                                    <a class="nav-link scrollto" href="#admin-panel">Admin Panel</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#admin-panel-config">Admin panel Configuration</a>
+                                        <a class="nav-link scrollto" href="#admin-panel-link">Link The Android App With Admin panel</a>
+                                    </nav><!--//nav-->	    
+                                    <a class="nav-link scrollto" href="#app-customization">The Application Customization</a>                                                     
+                                    <a class="nav-link scrollto" href="#app-apk">Generate Release APK/AppBundle</a>                                                     
+                                    <a class="nav-link scrollto" href="#update_v_2">Update to V2.0</a>                                                     
+                                    <a class="nav-link scrollto" href="#update_v_3">Update to V3.0</a>                                                     
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+<script type="text/javascri
+    
+</body>
+</html> 
+

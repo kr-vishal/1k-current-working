@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<button id="clickMe">Click Me</button>
+<script type="text/javascript">
+	// let button = document.getElementById("clickMe");
+
+	// button.addEventListener('click', () => {
+	// 	setTimeout(() => {
+	// 		console.log('Listener 1')
+	// 	},0);
+	// 	console.log("above 1");
+	// 	Promise.resolve().then(() => console.log('Micro 1'));
+	// 	console.log("below 1");
+	// });
+
+	// button.addEventListener('click', () => {
+	// 	setTimeout(() => {
+	// 		console.log('Listener 2')
+	// 	},0);
+	// 	console.log("above 2");
+	// 	Promise.resolve().then(() => console.log('Micro 2'));
+	// 	console.log("below 2");
+	// });
+
+	const callback = (first, second) => {
+		return prom = new Promise((resolve, reject) => {
+			if( first === second ){
+				resolve();
+			}
+			else{
+				reject();	
+			}
+		});
+	}
+
+	callback(1,"1").then(()=>{
+		console.log("Resolved");
+	}, ()=>{
+		console.log("Rejected");
+	});
+
+</script>
+</body>
+</html>
