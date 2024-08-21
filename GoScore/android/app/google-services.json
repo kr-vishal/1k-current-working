@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "381011818932",
+    "project_id": "football-flutter-47aeb",
+    "storage_bucket": "football-flutter-47aeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381011818932:android:ec354d485b168fbd381ae1",
+        "android_client_info": {
+          "package_name": "com.zozo.goscore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381011818932-r1b9bf89sjm89db00f96e9i105t2uml2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsltVWhSsJKLFLO3noZBos__trZgHQrKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381011818932-r1b9bf89sjm89db00f96e9i105t2uml2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

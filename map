@@ -1,0 +1,5 @@
+<?php 
+
+$url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=28.435859,77.0495017';
+$key = 'AIzaSyC5syoipP7tqCw-Rypahvg0wZ5noC9eg5M';
+&radius=1500&type=restaurant&keyword=cruise&key=

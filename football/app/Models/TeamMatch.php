@@ -31,4 +31,8 @@ class TeamMatch extends Model
     {
         return $this->belongsTo(League::class);
     }
+
+    public function stadium(){
+        return $this->belongsTo(Stadium::class);
+    }
 }
