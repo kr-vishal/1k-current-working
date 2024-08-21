@@ -1,0 +1,23 @@
+
+dataset:https://www.crcv.ucf.edu/data/Selfie/Selfie-dataset.tar.gz
+The model folder contains this 
+1- Memes classification.ipynb for( training and testing files )
+2- model.tflite if run model on tensorflow 
+3- model.h5 If run model in flask or any backend
+4-dataset file
+You don’t need ratrain and test model again because all outputs appears for in Memes classification .ipynb
+but if you need ratrain and test model (yon could be use colab to run this Memes (classification.ipynb) file 
+-------------------------------------------------------------------------------------------------------------->
+Flutter folder : don’t need for explains.
+But Summary:
+
+1- I used tflite package for loading model and predicted .
+2- I used image_picker for uploading images.
+
+note : 
+before run main in flutter project you should do:
+  - pub get 
+  - pub upgrade 
+
+For Denpendencies in file (pubspec.yaml)
+thank you 

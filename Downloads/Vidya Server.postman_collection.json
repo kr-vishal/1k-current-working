@@ -1,0 +1,1736 @@
+{
+	"info": {
+		"_postman_id": "76d9f77b-ae38-4b46-b2e8-eb32342ddae1",
+		"name": "EngageX Server",
+		"description": "API Docs for Pausch Labs EngageX Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6328776",
+		"_collection_link": "https://warped-meteor-544664.postman.co/workspace/Vidya~c232ca35-8665-4441-bc66-0a61a9dddef3/collection/6328776-76d9f77b-ae38-4b46-b2e8-eb32342ddae1?action=share&creator=6328776&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "user sign up",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "<string>",
+							"description": "User's first name"
+						},
+						{
+							"key": "last_name",
+							"value": "<string>",
+							"description": "User's last name"
+						},
+						{
+							"key": "email",
+							"value": "<email>",
+							"description": "User's email ID"
+						},
+						{
+							"key": "username",
+							"value": "<string>",
+							"description": "User ID"
+						},
+						{
+							"key": "img_url",
+							"value": "<string>",
+							"description": "Image URL"
+						},
+						{
+							"key": "role",
+							"value": "<string>",
+							"description": "Role (This can only be one of STUDENT,TEACHER)"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/sign_up",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"sign_up"
+					]
+				},
+				"description": "Create new user"
+			},
+			"response": [
+				{
+					"name": "Sign up successful",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hemanth_malla",
+									"value": "{\"summary\":\"Sign Up Hemanth Malla\",\"value\":{\"first_name\":\"Hemanth\",\"last_name\":\"Malla\",\"email\":\"hemanthmalla@gmail.com\",\"username\":\"hemanthmalla\",\"role\":\"STUDENT\"}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sign_up",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sign_up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Signed up successfully !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "edit profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Ribhuu",
+							"description": "User's first name"
+						},
+						{
+							"key": "last_name",
+							"value": "Chawlaa",
+							"description": "User's last name"
+						},
+						{
+							"key": "email",
+							"value": "ribhuchawla@gmail.com",
+							"description": "User's email ID"
+						},
+						{
+							"key": "username",
+							"value": "ribhuchawla",
+							"description": "User ID"
+						},
+						{
+							"key": "img_url",
+							"value": "\"gg\"",
+							"description": "Image URL"
+						},
+						{
+							"key": "role",
+							"value": "TEACHER",
+							"description": "Role (This can only be one of STUDENT,TEACHER)"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/edit_profile",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"edit_profile"
+					]
+				},
+				"description": "Edit user profile"
+			},
+			"response": [
+				{
+					"name": "Sign up successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hemanth_malla",
+									"value": "{\"summary\":\"Sign Up Hemanth Malla\",\"value\":{\"first_name\":\"Hemanth\",\"last_name\":\"Malla\",\"email\":\"hemanthmalla@gmail.com\",\"username\":\"hemanthmalla\",\"role\":\"STUDENT\"}}"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/edit_profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"edit_profile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"sucess\": false,\n \"code\": 3563221,\n \"title\": \"minim\",\n \"message\": \"occaecat\",\n \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "user sign in",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "<string>"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/sign_in",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"sign_in"
+					]
+				},
+				"description": "Login to EngageX"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "<string>"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sign_in",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sign_in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"firstname\": \"Hemanth\",\n  \"lastname\": \"Malla\",\n  \"email\": \"hemanthmalla@gmail.com\",\n  \"username\": \"hemanthmalla\",\n  \"role\": \"STUDENT\"\n },\n \"message\": \"Sign in successful !\",\n \"sucess\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create class",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/create_class",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"create_class"
+					]
+				},
+				"description": "Create a new class"
+			},
+			"response": [
+				{
+					"name": "Create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"class_id\": \"5fb15b5b1f64b0d26d8ec80c\"\n },\n \"message\": \"Class created successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzNDFhYmM0MDkyYjZmYzAzOGU0MDNjOTEwMjJkZDNlNDQ1MzliNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNTY1MzQ3NTk3NDk3NjU2MTkzIiwiZW1haWwiOiJyaWJodWNoYXdsYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkZfcHgxYzlPa01JQnJJc21BZWdxWGciLCJuYW1lIjoiUmliaHUiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2h2VklrdmVlc1FtSmpLVXMzemIxaUtTTlBrekhjNmdwNzJfb2U3SEdrPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlJpYmh1IiwibG9jYWxlIjoiZW4iLCJpYXQiOjE2Mzg3NTgzMTAsImV4cCI6MTYzODc2MTkxMCwianRpIjoiNTk3YWIzYzM4NzVjOTQ0YzhhMjFhM2E5ZTNlODczODViMDU5ZGUzMiJ9.L6_bf_9f3mRv0rapJbFguVekOv2w9O5USB7E1BVNvnnohi17mSBGJNLF6ZAKjq2RFcf3GG4o92wO6U1FXs3cBn9ZJsLRa9YUgWo0qtRjG7BfGsG1bNkU21pKPkNFhVbPBgZzXzVTExECEOn2CTN2J1_SKrhNKbXjOtDJf7Y9RhUrXhlAvqFMplf3HeoUeoiSLMqKxHzIX4br6_y7rY01uW4AwOMeGTUFqP--ec1oT-reIRtrNGCLrU42Feg31QpegC7pXq2qP03JU1y7ZKL7q9Ok-NcqNUtACQmnpBvUJ37w51-XhF2FgAzX917MNCBh6Snus8925vT_Ic-KAKz0Tw\n",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"kind\": \"CREATE_USER\",\n    \"payload\": {\n        \"email\": \"ribhuchawla@gmail.com\",\n\"first_name\": \"Ribhu\",\n\"last_name\": \"Chawla\",\n\"role\": \"STUDENT\",\n\"username\": \"ribhuchawla\"\n    }\n    \n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/create_user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"create_user"
+					]
+				},
+				"description": "Create a new class"
+			},
+			"response": [
+				{
+					"name": "Create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"class_id\": \"5fb15b5b1f64b0d26d8ec80c\"\n },\n \"message\": \"Class created successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "lit_users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ2M2RiZTczYWFkODhjODU0ZGUwZDhkNmMwMTRjMzZkYzI1YzQyOTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNTY1MzQ3NTk3NDk3NjU2MTkzIiwiZW1haWwiOiJyaWJodWNoYXdsYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ikx6cUF4NDlOT0FxN3VUVjJHclFpRnciLCJuYW1lIjoiUmliaHUiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2h2VklrdmVlc1FtSmpLVXMzemIxaUtTTlBrekhjNmdwNzJfb2U3SEdrPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlJpYmh1IiwibG9jYWxlIjoiZW4iLCJpYXQiOjE2NDcxMjA5MjksImV4cCI6MTY0NzEyNDUyOSwianRpIjoiMzNkNDdhYTBlMmU3MTE2YTM0OGY0MzRmOTI4YTE5ZmZmZDA3MjczYSJ9.D8htirJwrE8DQnsNZc1wiNEgPC-cB2peGF5j7EIsD3VLu-rVYGCJZaH7MEhEsv92NfI-NXqKT0xem3qQ_pdHuiCK6V1XEJ77yLwLzWikUSgf5zk1KBqZCpU7ksA2kCZFmux68LosJtZzeZAlrPrbW3b8wkGxGi7PzgAY5Po23e0XvVu8wnGES9blUBUXMHrM9ZGp5B6828rE5lFDiAnFH7KI7CnYFEYDxYSMcaSEpPEwyC5EvMLCWBEvy3BBoyx5ANbJs3HhsKCWtRdM5uXLogim0KuGn5MxqINLjiqNZQPAiuruXySOL-CkAcR5UPZiHpRAGX-YfmnYvwIRQUnkKA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"kind\": \"CREATE_USER\",\n    \"payload\": {\n        \"email\": \"ribhuchawla@gmail.com\",\n\"first_name\": \"Ribhu\",\n\"last_name\": \"Chawla\",\n\"role\": \"STUDENT\",\n\"username\": \"ribhuchawla\"\n    }\n    \n}"
+				},
+				"url": {
+					"raw": "https://dev-api.vidya.us/api/v1/list_user",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"api",
+						"v1",
+						"list_user"
+					]
+				},
+				"description": "Create a new class"
+			},
+			"response": [
+				{
+					"name": "Create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"class_id\": \"5fb15b5b1f64b0d26d8ec80c\"\n },\n \"message\": \"Class created successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list_plans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ2M2RiZTczYWFkODhjODU0ZGUwZDhkNmMwMTRjMzZkYzI1YzQyOTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNTY1MzQ3NTk3NDk3NjU2MTkzIiwiZW1haWwiOiJyaWJodWNoYXdsYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ikx6cUF4NDlOT0FxN3VUVjJHclFpRnciLCJuYW1lIjoiUmliaHUiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2h2VklrdmVlc1FtSmpLVXMzemIxaUtTTlBrekhjNmdwNzJfb2U3SEdrPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlJpYmh1IiwibG9jYWxlIjoiZW4iLCJpYXQiOjE2NDcxMjA5MjksImV4cCI6MTY0NzEyNDUyOSwianRpIjoiMzNkNDdhYTBlMmU3MTE2YTM0OGY0MzRmOTI4YTE5ZmZmZDA3MjczYSJ9.D8htirJwrE8DQnsNZc1wiNEgPC-cB2peGF5j7EIsD3VLu-rVYGCJZaH7MEhEsv92NfI-NXqKT0xem3qQ_pdHuiCK6V1XEJ77yLwLzWikUSgf5zk1KBqZCpU7ksA2kCZFmux68LosJtZzeZAlrPrbW3b8wkGxGi7PzgAY5Po23e0XvVu8wnGES9blUBUXMHrM9ZGp5B6828rE5lFDiAnFH7KI7CnYFEYDxYSMcaSEpPEwyC5EvMLCWBEvy3BBoyx5ANbJs3HhsKCWtRdM5uXLogim0KuGn5MxqINLjiqNZQPAiuruXySOL-CkAcR5UPZiHpRAGX-YfmnYvwIRQUnkKA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://dev-api.vidya.us/api/v1/list_plans",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"api",
+						"v1",
+						"list_plans"
+					]
+				},
+				"description": "List all plans"
+			},
+			"response": [
+				{
+					"name": "Create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"class_id\": \"5fb15b5b1f64b0d26d8ec80c\"\n },\n \"message\": \"Class created successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update_class",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpYmh1QHZpZHlhLnVzIiwidXNlciI6dHJ1ZSwiZXhwIjoxNjc5MzA5MDM1LCJpYXQiOjE2NjM2NzA2MzUsImlzcyI6InZpZHlhLnVzIn0.Rui8hMjPGk3Pwx534Y06c3HkmjE8AUOOJTfQrrSNeHQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"kind\": \"UPDATE_CLASS\",\n    \"payload\": {\n\t\t\t\"primary_teacher\": \"ribhu@vidya.us\",\n\t\t\t\"is_admin\": true,\n\t\t\t\"name\": \"Maths\",\n\t\t\t\"description\": \"11\",\n\t\t\t\"admins\": [\"ribhu@vidya.us\"],\n\t\t\t\"students\": [\"ribhuchawla@gmail.com\", \"kranthi.tej@zineduclasses.com\", \"pauschlabs@gmail.com\", \"deepak2605@gmail.com\", \"ravi@beaconstac.com\", \"vidyabhaskar93@gmail.com\", \"nihaldrive1@gmail.com\", \"puneet4@gmail.com\", \"sharma.deepshikha79@gmail.com\", \"brillian@gmail.com\", \"wamaje1050@5k2u.com\", \"dhaval@airtribe.live\", \"ribhu@vidya.us\", \"shoonya_007@yahoo.co.in\", \"rajesh@wiingy.com\", \"anshuldua@gmail.com\", \"manuiitb@gmail.com\", \"bhavishya@education10x.com\", \"haripriyavalayaputtur@gmail.com\"],\n\t\t\t\"id\": \"609a541b97236c4b247f73bc\",\n\t\t\t\"institute_id\": \"\"\n\t\t}\n}"
+				},
+				"url": {
+					"raw": "https://api.vidya.us/api/v1/update_class",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"api",
+						"v1",
+						"update_class"
+					]
+				},
+				"description": "Create a new class"
+			},
+			"response": [
+				{
+					"name": "Create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"class_id\": \"5fb15b5b1f64b0d26d8ec80c\"\n },\n \"message\": \"Class created successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzNDFhYmM0MDkyYjZmYzAzOGU0MDNjOTEwMjJkZDNlNDQ1MzliNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNDY4NDUwMTg1NTgyLTdudWtmYzcyZmdqamY5MWJsZnQ1MnQ2dmxqYmY1bGo5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzNTY1MzQ3NTk3NDk3NjU2MTkzIiwiZW1haWwiOiJyaWJodWNoYXdsYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkZfcHgxYzlPa01JQnJJc21BZWdxWGciLCJuYW1lIjoiUmliaHUiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2h2VklrdmVlc1FtSmpLVXMzemIxaUtTTlBrekhjNmdwNzJfb2U3SEdrPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlJpYmh1IiwibG9jYWxlIjoiZW4iLCJpYXQiOjE2Mzg3NTgzMTAsImV4cCI6MTYzODc2MTkxMCwianRpIjoiNTk3YWIzYzM4NzVjOTQ0YzhhMjFhM2E5ZTNlODczODViMDU5ZGUzMiJ9.L6_bf_9f3mRv0rapJbFguVekOv2w9O5USB7E1BVNvnnohi17mSBGJNLF6ZAKjq2RFcf3GG4o92wO6U1FXs3cBn9ZJsLRa9YUgWo0qtRjG7BfGsG1bNkU21pKPkNFhVbPBgZzXzVTExECEOn2CTN2J1_SKrhNKbXjOtDJf7Y9RhUrXhlAvqFMplf3HeoUeoiSLMqKxHzIX4br6_y7rY01uW4AwOMeGTUFqP--ec1oT-reIRtrNGCLrU42Feg31QpegC7pXq2qP03JU1y7ZKL7q9Ok-NcqNUtACQmnpBvUJ37w51-XhF2FgAzX917MNCBh6Snus8925vT_Ic-KAKz0Tw\n",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"kind\": \"UPDATE_USERS\",\n    \"payload\": {\n        \"email\": \"ribhuchawla@gmail.com\",\n\"first_name\": \"Ribhu\",\n\"last_name\": \"Chawla\",\n\"role\": \"STUDENT\",\n\"username\": \"ribhuchawla\"\n    }\n    \n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/update/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"update",
+						"users"
+					]
+				},
+				"description": "Create a new class"
+			},
+			"response": [
+				{
+					"name": "Create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<string>\",\n    \"primary_teacher\": \"<string>\",\n    \"is_admin\": \"<boolean>\",\n    \"schedule\": \"<string>\",\n    \"description\": \"<string>\",\n    \"admins\": [\n        \"<string>\",\n        \"<string>\"\n    ],\n    \"students\": [\n        \"<string>\",\n        \"<string>\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/create_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"create_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"class_id\": \"5fb15b5b1f64b0d26d8ec80c\"\n },\n \"message\": \"Class created successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list classes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/list_classes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"list_classes"
+					]
+				},
+				"description": "List all classes"
+			},
+			"response": [
+				{
+					"name": "List successful",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/list_classes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"list_classes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"classes\": [\n   {\n    \"primary_teacher\": \"hemanthmalla@gmail.com\",\n    \"name\": \"physics\",\n    \"schedule\": \"\",\n    \"description\": \"9th Grade physics class\",\n    \"admins\": [\n     \"hemanthmalla@gmail.com\"\n    ],\n    \"students\": [\n     \"srsh144\"\n    ]\n   }\n  ]\n },\n \"message\": \"Class listed successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/list_classes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"list_classes"
+					]
+				},
+				"description": "List all classes"
+			},
+			"response": [
+				{
+					"name": "List successful",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/list_classes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"list_classes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"classes\": [\n   {\n    \"primary_teacher\": \"hemanthmalla@gmail.com\",\n    \"name\": \"physics\",\n    \"schedule\": \"\",\n    \"description\": \"9th Grade physics class\",\n    \"admins\": [\n     \"hemanthmalla@gmail.com\"\n    ],\n    \"students\": [\n     \"srsh144\"\n    ]\n   }\n  ]\n },\n \"message\": \"Class listed successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list sessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/list_sessions",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"list_sessions"
+					]
+				},
+				"description": "Fetch session history of a class"
+			},
+			"response": [
+				{
+					"name": "List successful",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/list_sessions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"list_sessions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 1,\n \"data\": {\n  \"classes\": [\n   {\n    \"primary_teacher\": \"hemanthmalla@gmail.com\",\n    \"name\": \"physics\",\n    \"schedule\": \"\",\n    \"description\": \"9th Grade physics class\",\n    \"admins\": [\n     \"hemanthmalla@gmail.com\"\n    ],\n    \"students\": [\n     \"srsh144\"\n    ]\n   }\n  ]\n },\n \"message\": \"Class listed successfully !\",\n \"success\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete class",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/delete_class",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"delete_class"
+					]
+				},
+				"description": "Delete class"
+			},
+			"response": [
+				{
+					"name": "Delete successful",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/delete_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"delete_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "start session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/start_session",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"start_session"
+					]
+				},
+				"description": "Start a session"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/start_session",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"start_session"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create checkout session",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}//create_checkout_session",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"",
+						"create_checkout_session"
+					]
+				},
+				"description": "Start a session"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/start_session",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"start_session"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ask question",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kind\": \"<string>\",\n    \"auth_token\": \"<string>\",\n    \"session_id\": \"<string>\",\n    \"class_id\": \"<string>\",\n    \"payload\": \"<object>\",\n    \"msg_uuid\": \"<string>\",\n    \"msg_seq_id\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/ask_question",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"ask_question"
+					]
+				},
+				"description": "Ask new Question in a class"
+			},
+			"response": [
+				{
+					"name": "Question create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"global_msg\": {\n        \"summary\": \"Format to send a global msg\",\n        \"value\": {\n            \"auth_token\": \"6b017212-682d-463f-830e-4c0f0f527140\",\n            \"session_id\": \"public\",\n            \"payload\": {\n                \"msg\": \"Hello World\"\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ask_question",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ask_question"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "post answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"kind\": \"<string>\",\n    \"auth_token\": \"<string>\",\n    \"session_id\": \"<string>\",\n    \"class_id\": \"<string>\",\n    \"payload\": \"<object>\",\n    \"msg_uuid\": \"<string>\",\n    \"msg_seq_id\": \"<string>\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/post_answer",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"post_answer"
+					]
+				},
+				"description": "Post answer from a student"
+			},
+			"response": [
+				{
+					"name": "Question create successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"global_msg\": {\n        \"summary\": \"Format to send a global msg\",\n        \"value\": {\n            \"auth_token\": \"6b017212-682d-463f-830e-4c0f0f527140\",\n            \"session_id\": \"public\",\n            \"payload\": {\n                \"msg\": \"Hello World\"\n            }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/post_answer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"post_answer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "end session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/end_session",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"end_session"
+					]
+				},
+				"description": "End a running session"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/end_session",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"end_session"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "session state",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session_state?session_id=<string>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session_state"
+					],
+					"query": [
+						{
+							"key": "session_id",
+							"value": "<string>",
+							"description": "ID of the class to join"
+						}
+					]
+				},
+				"description": "API to re-sysnc session state"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/session_state?session_id=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session_state"
+							],
+							"query": [
+								{
+									"key": "session_id",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "session stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/session_stats",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"session_stats"
+					]
+				},
+				"description": "Stats for a given session ID"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/session_stats",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"session_stats"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "class invite",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/class_invite?class_id=<string>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"class_invite"
+					],
+					"query": [
+						{
+							"key": "class_id",
+							"value": "<string>",
+							"description": "ID of the class to join"
+						}
+					]
+				},
+				"description": "Invite participants to class"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/class_invite?class_id=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"class_invite"
+							],
+							"query": [
+								{
+									"key": "class_id",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"code\": 0,\n \"data\": {\n  \"invite_code\": \"985beb76-4c21-48fd-8675-c5112d1cb389\",\n  \"invite_link\": \"https://vidya.us/join_class?invite_code=985beb76-4c21-48fd-8675-c5112d1cb389\",\n  \"message\": \"Hi ! Welcome to vidya.us ! You have been invite to the physics class by hemanthmalla@gmail.com. Please click on https://vidya.us/join_class?invite_code=985beb76-4c21-48fd-8675-c5112d1cb389 to accept the invitation.\"\n },\n \"message\": \"Invite link created successfully\",\n \"sucess\": true,\n \"title\": \"Success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "join class",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/join_class",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"join_class"
+					]
+				},
+				"description": "Join a new class"
+			},
+			"response": [
+				{
+					"name": "Login successful",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: bearer",
+								"key": "Authorization",
+								"value": "Bearer <token>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/join_class",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"join_class"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n \"success\": true,\n \"code\": 0,\n \"title\": \"Success\",\n \"message\": \"Happy Engaging !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Scaleway Function",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Google OAuth",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Google Token Info",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "https://dev-api.vidya.us/get_user_details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "dev-api.vidya.us"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9,hi;q=0.8,it;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpYmh1Y2hhd2xhQGdtYWlsLmNvbSIsInVzZXIiOnRydWUsImV4cCI6MTY3NjQ2NjY3NSwiaWF0IjoxNjYwNTY5MDc1LCJpc3MiOiJ2aWR5YS51cyJ9.6t2unryJlwGFu165tqrUKhpZgjV14SUS1r9ryi9IYKA"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "origin",
+						"value": "https://dev.vidya.us"
+					},
+					{
+						"key": "referer",
+						"value": "https://dev.vidya.us/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "https://dev-api.vidya.us/get_user_details",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"get_user_details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Invite Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev-api.vidya.us/generate-class-invite-code?class_id=619de02242c56e2175879f38",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"generate-class-invite-code"
+					],
+					"query": [
+						{
+							"key": "class_id",
+							"value": "619de02242c56e2175879f38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Join_class",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0dWRlbnRAdmlkeWF0ZXN0LnVzIiwidXNlciI6dHJ1ZSwiZXhwIjoxNjc5MzA5NzgzLCJpYXQiOjE2NjM2NzEzODMsImlzcyI6InZpZHlhLnVzIn0.2qDb1dXkPHXGht3NLCZByb97i0dYBOo1KwqPF12iA10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"invite_code\": \"4732\"\n}"
+				},
+				"url": {
+					"raw": "https://dev-api.vidya.us/join_class",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"join_class"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add students ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "auth_override:user34@vidyatest.us"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"class_id\": \"6335e2bbdb23db3c0da15553\",\n    \"students\": [{\n        \"first_name\": \"abcd\",\n        \"last_name\": \"def\",\n        \"email\": \"test1@vidyatest.us\"\n    }]\n}"
+				},
+				"url": {
+					"raw": "https://dev-api.vidya.us/add_students_to_class",
+					"protocol": "https",
+					"host": [
+						"dev-api",
+						"vidya",
+						"us"
+					],
+					"path": [
+						"add_students_to_class"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpYmh1QHZpZHlhLnVzIiwidXNlciI6dHJ1ZSwiZXhwIjoxNjc4OTYxMjg2LCJpYXQiOjE2NjMzMjI4ODYsImlzcyI6InZpZHlhLnVzIn0.-uOK7vhJAgtMKNkPP1LjMpS5PG3Ro1HiRCEO7pE1gME",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://dev-api.vidya.us"
+		}
+	]
+}

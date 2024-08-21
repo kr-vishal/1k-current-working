@@ -1,0 +1,361 @@
+X-CSE-ConnectionGUID: MrKoz2qFS+uyr0JiXHk8ww==
+X-CSE-MsgGUID: dimXepegQmeASePTwXSmRQ==
+Received-SPF: None (mx1.paypalcorp.com: no sender authenticity
+  information available from domain of
+  svishal1432004@gmail.com) identity=pra;
+  client-ip=209.85.167.52; receiver=mx1.paypalcorp.com;
+  envelope-from="svishal1432004@gmail.com";
+  x-sender="svishal1432004@gmail.com";
+  x-conformance=sidf_compatible
+Received-SPF: Pass (mx1.paypalcorp.com: domain of
+  svishal1432004@gmail.com designates 209.85.167.52 as
+  permitted sender) identity=mailfrom; client-ip=209.85.167.52;
+  receiver=mx1.paypalcorp.com;
+  envelope-from="svishal1432004@gmail.com";
+  x-sender="svishal1432004@gmail.com";
+  x-conformance=sidf_compatible; x-record-type="v=spf1";
+  x-record-text="v=spf1 ip4:35.190.247.0/24 ip4:64.233.160.0/19
+  ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18
+  ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16
+  ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19
+  ~all"
+Received-SPF: None (mx1.paypalcorp.com: no sender authenticity
+  information available from domain of
+  postmaster@mail-lf1-f52.google.com) identity=helo;
+  client-ip=209.85.167.52; receiver=mx1.paypalcorp.com;
+  envelope-from="svishal1432004@gmail.com";
+  x-sender="postmaster@mail-lf1-f52.google.com";
+  x-conformance=sidf_compatible
+Authentication-Results: mx1.paypalcorp.com; spf=None smtp.pra=svishal1432004@gmail.com; spf=Pass smtp.mailfrom=svishal1432004@gmail.com; spf=None smtp.helo=postmaster@mail-lf1-f52.google.com; dkim=pass (signature verified) header.i=@gmail.com; dmarc=pass (p=none dis=none) d=gmail.com
+IronPort-SDR: 667709b0_gVmunyKAXKdCHicEJf+4S+kC4nj1yqVE049RsAUugEo79ny
+ RDGP00PWerg2t8gqb1MvWdsUdJ7wVtT/PzlnKAg==
+X-IronPort-AV: E=McAfee;i="6700,10204,11111"; a="554449249"
+X-IronPort-AV: E=Sophos;i="6.08,258,1712620800"; 
+   d="scan'208,217";a="554449249"
+X-Amp-Result: SKIPPED(no attachment in message)
+X-Amp-File-Uploaded: False
+X-ESA_Hostname: phx11-ipin-05.paypalcorp.com
+Received: from mail-lf1-f52.google.com ([209.85.167.52])
+  by mx1.paypalcorp.com with ESMTP/TLS/ECDHE-RSA-AES256-GCM-SHA384; 22 Jun 2024 17:28:15 +0000
+Received: by mail-lf1-f52.google.com with SMTP id 2adb3069b0e04-52ce0140416so348529e87.0
+        for <service@paypal.com>; Sat, 22 Jun 2024 10:28:15 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1719077294; x=1719682094; darn=paypal.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=pgqJml7yFwlGx8eMg3RSe67meuVN2VcQ7AZw3ba49Lw=;
+        b=Q01mwToGYFsIwS+KUhoQTQrisdV5NipbgkdUpaHmrndIBeDp0/HMvO/GopkPamUjim
+         /Qu6WXYmYwmKk8zZRBTqKPb55JA1kmwbMJLfWfYqI6dGmPGOb0960+aumzDr5XmRA1pn
+         yjdbqGYnOTGHPuA6GljWuWTPXIIQ6aBdPHsHeScpY1Z3Hi5G6aX+xPEXyp2HrTwB4cBY
+         iK7egDwAyycwiwnT6ksNd5qoxlYNX2JUzNCOOjTpk4+10de6zuXuWIpBkPDH4jDV6ZZ6
+         yDSdsQ1BBq2/47uW8Xf+6rvGklLKqjioAAXcoG05WBEDXrs1bJ2RdylD/HFUINMiUDDA
+         kBgw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1719077294; x=1719682094;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=pgqJml7yFwlGx8eMg3RSe67meuVN2VcQ7AZw3ba49Lw=;
+        b=ogURUot1FytK+rxeAN3MA1ltwPDe6qmgUAjgIBzE1bkwFAoxgmaoVxW4HbwavWx5cE
+         e7N4vkV6rQAoRzhV9Chinb5/DN1TGfP2EbCVpjNmuOweV2wwGdbN3K13BpTQd4GV3ggk
+         o8QCRqPJvO6fVzKx7laHD+DiWFtibErW/Q7ZUWfwDk1kwKrC3JnRcWWt19uB6JjacQ/K
+         aG6rB2oxeoIidqNsDF87TgchyQ6hcQDI7TgadEyy8FpgPSE8e58MUW1JFX9EEbGW3fXO
+         aIgVOsInVbcfafAAF5kvHDyELCpHrOP+TZ1ixoKP7clWJfAMpRJNZdDlfY58edohBIzl
+         caqw==
+X-Gm-Message-State: AOJu0YxQ90hMcywM1BVjCKBXT0CVWj+kX59T1CYSe/IAUf5+BKg5XUBX
+	TnO2K1J0X1wnvmzhgZiNbiEtQr6VEeDXHhybDp/hwIFa9bx09Hvt7CLr5SzaOvlZ4htfNyoJS4m
+	RIsW6ZOaruteQnCYgnkk1q/71DMACUA==
+X-Google-Smtp-Source: AGHT+IGSIeO2KirRl+vkc++b28kT7Cpc5o31QCJPLzgrWsRDnpYG/ivKu8wR/8pUe6axSIgUHeAVLXeoHRPf7kgtATY=
+X-Received: by 2002:a19:6b08:0:b0:52c:8a37:6cf4 with SMTP id
+ 2adb3069b0e04-52ce0610674mr580946e87.14.1719077293540; Sat, 22 Jun 2024
+ 10:28:13 -0700 (PDT)
+MIME-Version: 1.0
+References: <96.E1.04094.F140B566@ccg13mail05>
+In-Reply-To: <96.E1.04094.F140B566@ccg13mail05>
+From: Vishal Singh <svishal1432004@gmail.com>
+Date: Sat, 22 Jun 2024 22:58:01 +0530
+Message-ID: <CAJ1dD1L+vz_-nX-o9AUoCyg3y5iU_jbHj-dJcS0eQMKM_KWFrg@mail.gmail.com>
+Subject: Re: Update on Case ID PP-R-FBL-527584254
+To: "service@paypal.com" <service@paypal.com>
+Content-Type: multipart/alternative; boundary="0000000000006c4c80061b7ddfe6"
+
+--0000000000006c4c80061b7ddfe6
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Team,
+
+I opened this account a long time ago, and didn't use it for a while. I
+noticed recently that someone hacked into my account, and that money didn't
+belong to me, or I didn't charge anyone. Hence, I don't want the money
+back. However, my account is in negative balance, and I want you all to
+please investigate the matter, and find out who did it. Once found, please
+keep account back to normal, and make the balance to zero.
+
+Please let me know in case you need any further information from me.
+
+Thanks,
+Vishal Singh
+
+On Sat, Jun 1, 2024 at 4:51=E2=80=AFPM service@paypal.com <service@paypal.c=
+om>
+wrote:
+
+> Hello Vishal Singh, As previously communicated, your buyer opened a
+> dispute for the following reaso..
+>
+> <https://www.paypal.com?utm_source=3Dunp&utm_medium=3Demail&utm_campaign=
+=3DPPC000156&utm_unptid=3D06aeaa72-2009-11ef-8a1b-40a6b729386d&ppid=3DPPC00=
+0156&cnac=3DUS&rsta=3Den_US&cust=3D&unptid=3D06aeaa72-2009-11ef-8a1b-40a6b7=
+29386d&calc=3D65cdc6d328a03&unp_tpcid=3DDisputes-PPC000156&page=3Dmain:emai=
+l:PPC000156:::&pgrp=3Dmain:email&e=3Dcl&mchn=3Dem&s=3Dci&mail=3Dsys&tenant=
+=3DPAYPAL&xt=3D104038,124817&unp_adv=3Dtrue>
+>
+> Hello Vishal Singh,
+>
+> As previously communicated, your buyer opened a dispute for the following
+> reason:
+>
+> The buyer stated that they did not authorize this purchase.
+>
+> Here are case details:
+>
+>
+>    - Case ID: PP-R-FBL-527584254
+>    - Buyer's name: Henry Wilson
+>    - Buyer's email: doylewilsondoyle@gmail.com
+>    - Buyer's transaction ID: 9VL82263B2972504H
+>    - Your transaction ID: 4AF38087PM882873L
+>    - Transaction date: March 29, 2024
+>    - Transaction amount: $149.99 USD
+>    - Disputed amount: $149.99 USD
+>
+> $149.99 USD has now been debited from your PayPal account for the
+> following reason(s):
+>
+>
+>    - Other.
+>
+> In addition, a chargeback fee of has been debited from your PayPal accoun=
+t.
+>
+> We have charged you a Dispute Fee of $15.00 USD, since your account was
+> categorized into Standard Dispute Fee tier when this dispute was filed.
+>
+> For more details about the Dispute Fee, please see our User Agreement
+> <https://www.paypal.com/webapps/mpp/ua/useragreement-full?utm_source=3Dun=
+p&utm_medium=3Demail&utm_campaign=3DPPC000156&utm_unptid=3D06aeaa72-2009-11=
+ef-8a1b-40a6b729386d&ppid=3DPPC000156&cnac=3DUS&rsta=3Den_US&cust=3D&unptid=
+=3D06aeaa72-2009-11ef-8a1b-40a6b729386d&calc=3D65cdc6d328a03&unp_tpcid=3DDi=
+sputes-PPC000156&page=3Dmain:email:PPC000156:::&pgrp=3Dmain:email&e=3Dcl&mc=
+hn=3Dem&s=3Dci&mail=3Dsys&tenant=3DPAYPAL&xt=3D104038,124817&unp_adv=3Dtrue=
+>
+> .
+>
+> We understand that you may not have been expecting this chargeback. If
+> this debit has caused your PayPal account balance to go negative, please
+> log in to your account and add money to your balance.
+>
+> Thank you for your patience during this process. We appreciate your
+> business.
+>
+> You can find additional information and tips about buying and selling
+> safely on our *Business Resource Center
+> <https://www.paypal.com/webapps/mpp/brc/home#_blank>*.
+>
+> Thanks,
+>
+> PayPal
+>
+> Not sure why you received this email? Learn more
+> <https://www.paypal.com/us/smarthelp/article/why-am-i-receiving-emails-fr=
+om-paypal-when-i-dont-have-an-account-faq4172?utm_source=3Dunp&utm_medium=
+=3Demail&utm_campaign=3DPPC000156&utm_unptid=3D06aeaa72-2009-11ef-8a1b-40a6=
+b729386d&ppid=3DPPC000156&cnac=3DUS&rsta=3Den_US&cust=3D&unptid=3D06aeaa72-=
+2009-11ef-8a1b-40a6b729386d&calc=3D65cdc6d328a03&unp_tpcid=3DDisputes-PPC00=
+0156&page=3Dmain:email:PPC000156:::&pgrp=3Dmain:email&e=3Dcl&mchn=3Dem&s=3D=
+ci&mail=3Dsys&tenant=3DPAYPAL&xt=3D104038,124817&unp_adv=3Dtrue>
+>
+> Copyright =C2=A9 1999-2022 PayPal, Inc. All rights reserved. PayPal is lo=
+cated
+> at 2211 N. First St., San Jose, CA 95131.
+>
+> PayPal PPC000156:1.28:65cdc6d328a03
+>
+
+--0000000000006c4c80061b7ddfe6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr">Hi Team,<div><br></div><div>I opened this=
+ account a long=C2=A0time ago, and didn&#39;t use it for a while. I noticed=
+ recently that someone hacked into my account, and that money didn&#39;t be=
+long to me, or I didn&#39;t charge anyone. Hence, I don&#39;t want the mone=
+y back. However, my account is in negative balance, and I want you all to p=
+lease investigate the matter, and find out who did it. Once found, please k=
+eep account back to normal, and make the balance to zero.</div><div><br></d=
+iv><div>Please let me know in case you need any=C2=A0further information fr=
+om me.</div><div><br></div><div>Thanks,</div><div>Vishal Singh</div></div><=
+br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Sat,=
+ Jun 1, 2024 at 4:51=E2=80=AFPM <a href=3D"mailto:service@paypal.com">servi=
+ce@paypal.com</a> &lt;<a href=3D"mailto:service@paypal.com">service@paypal.=
+com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" style=3D"marg=
+in:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1e=
+x"><div class=3D"msg-6963031002440533846">
+  =20
+   	=09
+       =20
+  =20
+   <div>
+ <div style=3D"display:none;color:rgb(255,255,255);font-size:1pt">Hello Vis=
+hal Singh,
+
+As previously communicated, your buyer opened a dispute for the following r=
+easo..</div>
+	 <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"m_-69630310=
+02440533846emailWrapperTable" width=3D"580">
+	    <tbody>
+<tr valign=3D"top">
+    <td colspan=3D"3">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%">
+            <tbody>
+                <tr valign=3D"top">
+                    <td width=3D"130px;"><a href=3D"https://www.paypal.com?=
+utm_source=3Dunp&amp;utm_medium=3Demail&amp;utm_campaign=3DPPC000156&amp;ut=
+m_unptid=3D06aeaa72-2009-11ef-8a1b-40a6b729386d&amp;ppid=3DPPC000156&amp;cn=
+ac=3DUS&amp;rsta=3Den_US&amp;cust=3D&amp;unptid=3D06aeaa72-2009-11ef-8a1b-4=
+0a6b729386d&amp;calc=3D65cdc6d328a03&amp;unp_tpcid=3DDisputes-PPC000156&amp=
+;page=3Dmain:email:PPC000156:::&amp;pgrp=3Dmain:email&amp;e=3Dcl&amp;mchn=
+=3Dem&amp;s=3Dci&amp;mail=3Dsys&amp;tenant=3DPAYPAL&amp;xt=3D104038,124817&=
+amp;unp_adv=3Dtrue" target=3D"_blank"><img src=3D"https://www.paypalobjects=
+.com/en_US/i/logo/logo_emailheader_113wx46h.gif"></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt=3D"" border=3D"0" height=3D"10" src=3D"htt=
+p://www.paypalobjects.com/en_US/i/scr/pixel.gif" width=3D"1">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+	        <tr>
+	            <td colspan=3D"3">
+	                <img height=3D"13" src=3D"https://www.paypalobjects.com/en=
+_US/i/scr/scr_emailTopCorners_580wx13h.gif" border=3D"0" style=3D"vertical-=
+align: bottom;" alt=3D"">
+	            </td>
+	        </tr>
+	        <tr>
+	        							<td width=3D"12" style=3D"background:url(&quot;&quot;) 0% 5=
+0% repeat-y;border-left:1px solid rgb(221,221,221)">
+			                <img src=3D"https://www.paypalobjects.com/en_US/i/scr/pi=
+xel.gif" border=3D"0" alt=3D"">
+			            </td>
+
+	            <td style=3D"width:530px;padding:12px;margin:0px" width=3D"530=
+">
+	                <table width=3D"100%">
+	                    <tbody>
+	                        <tr>
+	                            <td>
+	                                <p>Hello Vishal Singh,</p><p>As previously=
+ communicated, your buyer opened a dispute for the following reason:=C2=A0<=
+/p>
+<p>The buyer stated that they did not authorize this purchase.</p>
+<p>Here are case details: =C2=A0</p><p></p><ul>
+<li>Case ID:=C2=A0PP-R-FBL-527584254</li>
+
+<li>Buyer&#39;s name: <span>Henry Wilson</span></li>
+
+<li>Buyer&#39;s email: <span><a href=3D"mailto:doylewilsondoyle@gmail.com" =
+target=3D"_blank">doylewilsondoyle@gmail.com</a></span></li>
+
+<li>Buyer&#39;s transaction ID: 9VL82263B2972504H</li>
+
+<li>Your transaction ID: 4AF38087PM882873L</li>
+
+
+
+<li>Transaction date: March 29, 2024</li>
+
+<li>Transaction amount: $149.99=C2=A0USD</li>
+
+<li>Disputed amount: $149.99=C2=A0USD</li>
+
+</ul><p></p><p>$149.99=C2=A0USD<span style=3D"font-family:tahoma,arial,helv=
+etica,sans-serif;font-size:12px">=C2=A0has now been debited from your PayPa=
+l account for the following reason(s):</span></p>
+<p></p><ul><li>Other.</li></ul><p></p><p>In addition, a chargeback fee of  =
+has been debited from your PayPal account.</p><p></p><p>We have charged you=
+ a Dispute Fee of=C2=A0$15.00=C2=A0USD, since your account was categorized =
+into=C2=A0Standard Dispute Fee tier=C2=A0when this dispute was filed.</p>
+<p>For more details about the Dispute Fee, please see our <a href=3D"https:=
+//www.paypal.com/webapps/mpp/ua/useragreement-full?utm_source=3Dunp&amp;utm=
+_medium=3Demail&amp;utm_campaign=3DPPC000156&amp;utm_unptid=3D06aeaa72-2009=
+-11ef-8a1b-40a6b729386d&amp;ppid=3DPPC000156&amp;cnac=3DUS&amp;rsta=3Den_US=
+&amp;cust=3D&amp;unptid=3D06aeaa72-2009-11ef-8a1b-40a6b729386d&amp;calc=3D6=
+5cdc6d328a03&amp;unp_tpcid=3DDisputes-PPC000156&amp;page=3Dmain:email:PPC00=
+0156:::&amp;pgrp=3Dmain:email&amp;e=3Dcl&amp;mchn=3Dem&amp;s=3Dci&amp;mail=
+=3Dsys&amp;tenant=3DPAYPAL&amp;xt=3D104038,124817&amp;unp_adv=3Dtrue" style=
+=3D"text-decoration:none" target=3D"_blank">User Agreement</a>.</p>
+<p></p><p>We understand that you may not have been expecting this chargebac=
+k. If this debit has caused your PayPal account balance to go negative, ple=
+ase log in to your account and add money to your balance.</p>
+<p>Thank you for your patience during this process. We appreciate your busi=
+ness.</p>
+<p>You can find additional information and tips about buying and selling sa=
+fely on our <strong><a href=3D"https://www.paypal.com/webapps/mpp/brc/home#=
+_blank" style=3D"text-decoration:none" target=3D"_blank">Business Resource =
+Center</a></strong>.</p><p></p><p>Thanks,</p>
+<p>PayPal</p><p></p>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </td>
+	            						<td width=3D"12" style=3D"background:url(&quot;&quot;) 0=
+% 50% repeat-y;border-right:1px solid rgb(221,221,221)">
+			                <img src=3D"https://www.paypalobjects.com/en_US/i/scr/pi=
+xel.gif" border=3D"0" alt=3D"">
+			            </td>
+
+	        </tr>
+	        <tr>
+	            <td colspan=3D"3">
+	                <img height=3D"13" src=3D"https://www.paypalobjects.com/en=
+_US/i/scr/scr_emailBottomCorners_580wx13h.gif" border=3D"0" alt=3D"">
+	            </td>
+	        </tr>
+	    </tbody>
+	</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"m_-6963031002=
+440533846emailFooter" style=3D"padding-top:20px;font:12px Arial,Verdana,Hel=
+vetica,sans-serif;color:rgb(41,41,41)" width=3D"100%"><tbody><tr><td><span =
+style=3D"font-size:12px">Not sure why you received this email? <a href=3D"h=
+ttps://www.paypal.com/us/smarthelp/article/why-am-i-receiving-emails-from-p=
+aypal-when-i-dont-have-an-account-faq4172?utm_source=3Dunp&amp;utm_medium=
+=3Demail&amp;utm_campaign=3DPPC000156&amp;utm_unptid=3D06aeaa72-2009-11ef-8=
+a1b-40a6b729386d&amp;ppid=3DPPC000156&amp;cnac=3DUS&amp;rsta=3Den_US&amp;cu=
+st=3D&amp;unptid=3D06aeaa72-2009-11ef-8a1b-40a6b729386d&amp;calc=3D65cdc6d3=
+28a03&amp;unp_tpcid=3DDisputes-PPC000156&amp;page=3Dmain:email:PPC000156:::=
+&amp;pgrp=3Dmain:email&amp;e=3Dcl&amp;mchn=3Dem&amp;s=3Dci&amp;mail=3Dsys&a=
+mp;tenant=3DPAYPAL&amp;xt=3D104038,124817&amp;unp_adv=3Dtrue" style=3D"text=
+-decoration:none" target=3D"_blank">Learn more</a></span><p>Copyright =C2=
+=A9 1999-2022 PayPal, Inc. All rights reserved. PayPal is located at 2211 N=
+. First St., San Jose, CA 95131.</p><p class=3D"m_-6963031002440533846ppid"=
+>PayPal PPC000156:1.28:65cdc6d328a03</p></td></tr></tbody></table>
+<img src=3D"https://t.paypal.com/ts?v=3D1&amp;ppid=3DPPC000156&amp;cnac=3DU=
+S&amp;rsta=3Den_US&amp;cust=3D&amp;unptid=3D06aeaa72-2009-11ef-8a1b-40a6b72=
+9386d&amp;calc=3D65cdc6d328a03&amp;unp_tpcid=3DDisputes-PPC000156&amp;page=
+=3Dmain:email:PPC000156:::&amp;pgrp=3Dmain:email&amp;e=3Dop&amp;mchn=3Dem&a=
+mp;s=3Dci&amp;mail=3Dsys&amp;tenant=3DPAYPAL&amp;xt=3D104038,124817&amp;unp=
+_adv=3Dtrue" alt=3D"" height=3D"1" width=3D"1" border=3D"0">
+
+   </div>
+
+
+</div></blockquote></div></div>
+
+--0000000000006c4c80061b7ddfe6--
