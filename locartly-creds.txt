@@ -1,0 +1,19 @@
+password RDS locartly : O7iidHMk7rBLEebAG76C : O7iidHMk7rBLEebAG76C
+
+
+GRANT ALL PRIVILEGES ON locartly.* To 'locartly'@'%' IDENTIFIED BY 'OJiVZ8raU5LnAnfkBjWP';
+
+CREATE USER 'locartly'@'%' IDENTIFIED BY 'OJiVZ8raU5LnAnfkBjWP';
+
+ALTER USER 'locartly'@'%' IDENTIFIED BY 'OJiVZ8raU5LnAnfkBjWP';
+
+
+CREATE TABLE `user` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `userName` varchar(32) DEFAULT NULL,
+  `password` varchar(32) DEFAULT NULL,
+  `realName` varchar(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+Z@ppfresh@123#
